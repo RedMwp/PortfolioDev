@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border:none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin:0 auto;
+    color:#fff;
+    background: #303040;
+}
+.container, header{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+  color:#fff;
+}
+a:hover{
+    color:#F7AE23;
+}
+/*===== header qnd hero======*/
+header{
+    position: relative;
+}
+nav li { 
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: .6;
+    text-transform: capitalize;
+    transition: .4s ease-in-out;
+}
+nav li:hover{
+    opacity: 1;
+}
+nav{
+    height:60px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding: 2px 5px;
+    border:1px solid;
+}
+.hero .container{
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 40%;
+    max-width: 500px;
+}
+h1{
+    font-size: 4.1rem;
+    letter-spacing: .7px;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 50px;
+    
+}
+h2{
+    opacity: .6;
+    font-size: .99rem;
+    text-transform: capitalize;
+}
+h3{
+    font-size: 1.8rem;
+    margin: 20px 0;
+    line-height: 1.1;
+    letter-spacing: .3px;
+    max-width: 90%;
+}
+p{
+    font-size: .88rem;
+    opacity: .7;
+    margin: 10px 0;
+    max-width: 300px;
+    line-height: 1.5;
+    position: relative;
+}
+.cta-btn{
+    background: none;
+    color:#F7AE23;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 1.3rem;
+    border-bottom:1px solid;
+    margin: 10px 0px;
+}
+.cta-btn i{
+    display: none;
+}
+.cta-btn:hover i{
+    display: block;
+}
+.socials{
+    display: block;
+    margin-top: 50px 0;
+    font-size: 0;
+    width: 120px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+}
+#skills{
+    background: #1F202F;
+}
+#skills .container{
+    min-height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 8em;
+}
+.card ol{
+    display: flex;
+    justify-content: space-between;
+}
+.card ol li{
+    display: flex;
+    margin-right: 30px; 
+    align-items: center;
+}
+.card ol li span{
+    font-size: 3rem;
+    color:#F7AE23;
+    margin-right: 10px;
+}.services .container{
+    flex-direction: column;
+    justify-items: center;
+}
+.services ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.services .tab{
+    height: 180px;
+    width: 180px;
+    background: #303040;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 15px;
+    transform: translateY(-50%);
+    margin:0 20px;
+    transition: .3s ease-in-out;
+}
+.services .tab:hover{
+    background: #F7AE23;
+}
+.services .tab img{
+    height: 30px;
+    width: 30px;
+    justify-self: flex-start;
+    margin: 50px 0;
+   object-fit: contain;
+}
+.services .tab h2{
+    opacity: 1;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.services .tab div{
+    width: 70%;
+}
+.tab h4{
+    opacity: .6;
+    font-size: 1rem;
+}
+
+.skill-container div{
+    display: flex;
+}
+.skill-container img{
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+    opacity: .6;
+    object-fit: contain;
+}
+img:hover{
+    opacity: 1;
+}
+.project-tab img{
+    transition: .5s ease-in-out;
+}
+.project-tab{
+    height: 340px;
+    width: 300px;
+    position: relative;
+    margin: 50px 0;
+    background: #1F202F;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+.project-tab img{
+    height: 100%;
+    width: 100%;
+
+}
+.project-tab div{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(#1F202F,rgba(0,0,0,0));
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.project-tab h3{
+    margin: 0;
+    font-size: 1rem;
+}
+.project-tab h4{
+    opacity: .6;
+    font-size: .88rem;
+}
+.project-tab:hover img{
+    transform: scale(1.5,1.5);
+    
+}
+.inner-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#works{
+    margin: 7% 0; 
+}
+#works .container{
+    justify-content:space-between;
+}
+#works .card{
+    width:70%;
+}
+#blog{
+    background: #1F202F;
+    padding-top: 70px;
+}
+#blog .container{
+    height: 300px;
+    justify-content: space-between;
+}
+#blog ul{
+    width: 60%;
+}
+#blog li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(100%, 100%, 100%, 0.2);
+}
+#blog ul h2{
+    opacity: .9;
+}
+#blog span{
+    opacity: .5;
+}
+#blog .card h3{
+    max-width: 70%;
+}
+#blog p:before{
+    content:' " ';
+    font-weight: 700;
+    font-size: 6rem;
+    position: absolute;
+    left:-30px;
+    top:-70px;
+    color:#303040;
+    opacity: 1;
+    
+}
+#blog p{
+    max-width: 400px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+#contact .container{
+    height: 400px;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+#contact form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+}
+form input{
+    height: 40px;
+    background: none;
+    text-align: left;
+    border-bottom: 1px solid rgba(100%, 100%, 100%, 0.3);
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 30px;
+}
+input::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+#contact h2{
+    font-size: 1.4rem;
+    opacity: 1;
+    max-width: 300px;
+}
+.me{
+    width:220px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    opacity: .8;
+    transition: .4s ease-in-out;
+}
+.quote{
+    justify-content: center;
+}
+.quote .card{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
