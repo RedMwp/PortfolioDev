@@ -160,8 +160,8 @@ p{
     
 }
 .services .tab{
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     background: #303040;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     display: flex;
